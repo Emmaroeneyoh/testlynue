@@ -1,0 +1,276 @@
+
+
+This are all the api for the authentication of the admins
+
+for POST request
+
+1.   /admin/signup  
+         expected body ( firstname,
+            lastname,
+            password,
+            email,
+            DOB,
+            phoneNumber,
+            address,
+            role)
+       filename should be (
+        adminPicture
+       )
+
+2.   /admin/login
+          expected body (
+            password,
+            email
+           )
+
+3.   /admin/forgot_password  
+        expected body (
+            email
+           )
+4.   /admin/new_password
+        expected body (
+            password
+           )
+
+
+
+
+for GET request
+1.   /admin/logout
+
+
+This are all the api to delete, Edit, GET any admin
+
+for Get request 
+1. /admin/:id
+2. / admin
+
+for Get request but  search quesries. we are searching by email
+1. / admin / search ? admin
+
+for Delete request 
+1.  /admin/:id
+
+for PUT request 
+1.  /admin/:id
+     expected body ( firstname,
+            lastname,
+            password,
+            email,
+            DOB,
+            phoneNumber,
+            address,
+            role)
+       filename should be (
+        adminPicture
+       )
+
+
+
+This are all the api for the authentication of the users
+
+for POST request
+
+1.   /user/signup  
+         expected body ( firstname,
+            lastname,
+            password,
+            email,
+            DOB,
+            phoneNumber,
+            address,
+            state,
+            country,
+            role)
+       filename should be (
+          userPicture
+       )
+
+2.   /user/login
+          expected body (
+            password,
+            email
+           )
+
+3.   /user/forgot_password  
+        expected body (
+            email
+           )
+4.   /user/new_password
+        expected body (
+            password
+           )
+
+
+for GET request
+1.   /user/logout
+
+
+This are all the api to Edit, GET any user
+
+for Get request 
+1. /user/:id
+
+for Get request but  search quesries. we are searching by email
+1. /user admin / search ? user
+
+for Delete request 
+1.  /admin/:id
+
+for PUT request 
+1.  /user/:id
+     expected body ( firstname,
+            lastname,
+            password,
+            email,
+            DOB,
+            phoneNumber,
+            address,
+            state,
+            country,
+            role)
+       filename should be (
+          userPicture
+       )
+
+
+      
+
+This are all the api to create, update, get, delete rented property
+
+for Get request 
+1./rent/property/:id
+
+2. /rent/property
+
+for Get request but  search quesries. we are searching by email
+1. /user admin / search ? user
+
+for Delete request 
+1.  /rent/property/:id
+
+for PUT request 
+1.  /rent/property/:id
+     expected body (
+      propertyType, isFurnushed, condition, agencyfee,  houseAddress, category 
+     )
+       filename should be (
+          display_image
+       )
+
+
+ post request
+1.  /rent/property
+     expected body (
+      propertyType, isFurnushed, condition, agencyfee, client, houseAddress, category 
+     )
+       filename should be (
+          display_image
+       )
+      
+
+This are all the api to create, update, get, delete rented parcel
+
+for Get request 
+1./rent/parcel/:id
+
+2. /rent/parcel
+
+for Get request but  search quesries. we are searching by email
+1. /user admin / search ? user
+
+for Delete request 
+1.  /rent/parcel/:id
+
+for PUT request 
+1.  /rent/parcel/:id
+     expected body (
+     propertyType, PropertyUse, titles, facilities,category, agencyfee,  houseAddress  
+     )
+       filename should be (
+          display_image
+       )
+
+
+ post request
+1.  /rent/parcel
+     expected body (
+       propertyType, PropertyUse, titles, facilities,category, agencyfee, client, houseAddress 
+     )
+       filename should be (
+          display_image
+       )
+
+
+      
+      
+
+This are all the api to create, update, get, delete SEll property
+
+for Get request 
+1./sell/property/:id
+
+2. /sell/property
+
+for Get request but  search quesries. we are searching by email
+1. /user admin / search ? user
+
+for Delete request 
+1.  /sell/property/:id
+
+for PUT request 
+1.  /sell/property/:id
+     expected body (
+      propertyType, isFurnushed, condition, agencyfee,  houseAddress, category 
+     )
+       filename should be (
+          display_image
+       )
+
+
+ post request
+1.  /sell/property
+     expected body (
+      propertyType, isFurnushed, condition, agencyfee, client, houseAddress, category 
+     )
+       filename should be (
+          display_image
+       )
+
+
+      
+
+This are all the api to create, update, get, delete sell parcel
+
+for Get request 
+1./sell/parcel/:id
+
+2. /sell/parcel
+
+for Get request but  search quesries. we are searching by email
+1. /user admin / search ? user
+
+for Delete request 
+1.  /sell/parcel/:id
+
+for PUT request 
+1.  /sell/parcel/:id
+     expected body (
+     propertyType, PropertyUse, titles, facilities,category, agencyfee,  houseAddress  
+     )
+       filename should be (
+          display_image
+       )
+
+
+ post request
+1.  /sell/parcel
+     expected body (
+       propertyType, PropertyUse, titles, facilities,category, agencyfee, client, houseAddress 
+     )
+       filename should be (
+          display_image
+       )
+
+
+      
